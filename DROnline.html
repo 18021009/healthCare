@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        .container {
+            border: 2px solid #dedede;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .darker {
+            border-color: #ccc;
+            background-color: #ddd;
+        }
+
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .container img {
+            float: left;
+            max-width: 60px;
+            width: 100%;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        .container img.right {
+            float: right;
+            margin-left: 20px;
+            margin-right: 0;
+        }
+
+        .time-right {
+            float: right;
+            color: #aaa;
+        }
+
+        .time-left {
+            float: left;
+            color: #999;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <p class="logo">E-health</p>
+        <div class="top_nav">
+            <p>top nav</p>
+        </div>
+        <div class="user">
+            <p>user</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="drashboard">
+            <ul class="nav-item">
+                <li>
+                    <a href="./index.html"> <i class='fas fa-heartbeat'
+                            style="font-size: 24px; margin-right: 10px;"></i>
+                        <p style="display: inline;">chỉ số cơ thể</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./datlichtheodoi.html"> <i class="fa fa-calendar"
+                            style="font-size: 24px; color: rgb(223, 189, 173); margin-right: 10px;"></i>
+                        <p style="display: inline;">
+                            đặt lịch theo dõi tại nhà
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./datlichtaivien.html">
+                        <i class="fa fa-hospital-o"
+                            style="font-size: 24px;color: rgb(22, 22, 20); margin-right: 10px;"></i>
+                        đặt lịch khám tại viện
+                    </a>
+                </li>
+                <li>
+                    <a href="./datlichtainha.html">
+                        <i class="fa fa-medkit" style="font-size:24px; margin-right: 10px;"></i>
+                        đặt lịch khám tại nhà</a>
+                </li>
+                <li>
+                    <a href="./nhathuoconline.html">
+                        <i class="fa fa-plus-square" style="font-size:24px; margin-right: 10px;"></i>
+                        nhà thuốc online</a>
+                </li>
+                <li>
+                    <a href="./DROnline.html">
+                        <i class="fa fa-user-md" style="font-size:24px; margin-right: 10px;"></i>
+                        Dr.online</a>
+                </li>
+                <li><a href="./hoidap.html">hỏi đáp</a></li>
+            </ul>
+        </div>
+        <div class="content" style="display: block">
+            <h2>Chat Messages</h2>
+
+            <div class="container">
+                <i class="fa fa-user-md" style="font-size:30px"></i>
+                <p>Hello. How are you today?</p>
+                <span class="time-right">11:00</span>
+            </div>
+
+            <div class="container darker">
+                <i class='fas fa-user-circle' style='font-size:30px'></i>
+                <p>Hey! I'm fine. Thanks for asking!</p>
+                <span class="time-left">11:01</span>
+            </div>
+
+            <div class="container">
+                <i class="fa fa-user-md" style="font-size:30px"></i>
+                <p>Sweet! So, what do you wanna do today?</p>
+                <span class="time-right">11:02</span>
+            </div>
+
+            <div class="container darker">
+                <i class='fas fa-user-circle' style='font-size:30px'></i>
+                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                <span class="time-left">11:05</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</body>
+
+</html>
